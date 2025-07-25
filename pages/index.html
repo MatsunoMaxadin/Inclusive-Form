@@ -10,33 +10,50 @@
     <header class="flex">
         <h1>Pesquisa Sobre Minorias na Computação</h1>
         <p>Esta é uma pesquisa realizada para compreender melhor sobre como a computação pode impactar na vida de minorias sociais.</p>
-        <p>Esta pesquisa é baseada <a href=""></a></p>
+        <p>Esta pesquisa é baseada <a href="https://sol.sbc.org.br/index.php/educomp/article/view/34190/33981" target="_blank"> nesta pesquisa </a></p>
     </header>
     <main class="flex container">
+    <div class="flex item" id="firstForm">
+        <div class="flex item">
         <form class="flex item" action="">
             <legend>Sobre Você</legend>
             <label for="name"> Seu nome
-                <input type="text">
+                <input type="text" id="name">
             </label>
             <label for="age"> Sua Idade
                 <input type="text">
+            </label>
+             <label for="minority">Cursa Alguma Faculdade?
+                <input type="radio" name="minority" id="Sim">
+                <input type="radio" name="minority" id="Não">
+            </label>
+            <label for="curso">Seu Curso
+                <input type="text"> 
             </label>
             <label for="minority">Faz Parte de Alguma Minoria Social?
                 <input type="radio" name="minority" id="Sim">
                 <input type="radio" name="minority" id="Não">
             </label>
             <label for="whichMinority">
-                <input type="checkbox" name="whichMinority" id="LGBT">
-                <input type="checkbox" name="whichMinority" id="Mulher">
-                <input type="checkbox" name="whichMinority" id="Negro">
-                <input type="checkbox" name="whichMinority" id="">
+                LGBT<input type="checkbox" name="whichMinority" id="LGBT">
+                MULHER <input type="checkbox" name="whichMinority" id="Mulher">
+                ETNICO-RACIAL<input type="checkbox" name="whichMinority" id="etnicoracial">
+                PCD<input type="checkbox" name="whichMinority" id="pcd">
             </label>
-            
+        </div>
 
         </form>
-        <button><span>ir para a pesquisa</span></button>
+        <button id="start"><span>ir para a pesquisa</span></button>
+    </div>
+    <div class="flex container" id="Secondform">
+        <p id="nome"> </p>
+
+
+
+    </div>
     </main>
     <footer></footer>
-    
+    <script src="../src/main.js"></script>
 </body>
+
 </html>
